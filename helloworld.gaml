@@ -10,6 +10,7 @@ let W = 87;
 let R = 82;
 let D = 68;
 let Space = 32;
+
 printch(H);
 printch(E);
 printch(L);

@@ -58,7 +58,7 @@ public:
         line = trim(line);
         std::string start = line.substr(0, line.find(" "));
         std::string funcStart = line.substr(0, line.find("("));
-        if (funcStart.size() > 0 && funcStart.size() < start.size()) {
+        if (funcStart.size() > 0 && funcStart.size() < start.size()) {  
             start = funcStart;
         }
         start = trim(start);
@@ -381,7 +381,7 @@ long double curtime() {
 int main() {
     long double begin = curtime();
     Interpreter* interp = new Interpreter();
-    interp->parse("helloworld.gmal");
+    interp->parse("helloworld.gaml");
     long double end = curtime();
     std::cout << "Executed in " << end - begin << " milliseconds" << std::endl;
 }
