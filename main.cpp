@@ -381,7 +381,7 @@ long double curtime() {
 int main() {
     long double begin = curtime();
     Interpreter* interp = new Interpreter();
-    interp->parse("helloworld.gaml");
+    interp->parse("fizzbuzz.gaml");
     long double end = curtime();
     std::cout << "Executed in " << end - begin << " milliseconds" << std::endl;
 }
