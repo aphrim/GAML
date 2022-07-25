@@ -378,14 +378,6 @@ long double curtime() {
   ).count();
 }
 
-<<<<<<< HEAD
-int main() {
-    long double begin = curtime();
-    Interpreter* interp = new Interpreter();
-    interp->parse("fizzbuzz.gaml");
-    long double end = curtime();
-    std::cout << "Executed in " << end - begin << " milliseconds" << std::endl;
-=======
 int main(int argc, char** argv) {
     if (argc >= 1) {
         long double begin = curtime();
@@ -396,5 +388,4 @@ int main(int argc, char** argv) {
     } else {
         std::cout << "No file specified\n";
     }
->>>>>>> 2de84c848f8d39c4f56da6a0e350f9afbb4ce433
 }
